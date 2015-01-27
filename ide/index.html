@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Processing IDE</title>
+<style>
+canvas { width: 1000px; height: 1000px; border: 1px solid }
+</style>
+</head>
+<body onload="document.getElementById('code').focus()">
+<h1>Processing IDE</h1>
+<p>Paste your code below:</p>
+<p><a href="https://processing.org/reference/">Reference</a></p>
+<h2>Processing Code</h2>
+<textarea rows="20" cols="80" id="code"></textarea>
+<br> <input onclick="runSketch();" type="button" value="Run"></input>
+
+<h2>Canvas <small>Max size 1000 by 1000</small></h2>
+<div id="sketch-container">
+<canvas id="sketch"></canvas>
+</div>
+<h2>Output eg. errors</h2>
+<textarea rows="20" cols="80" id="output" readonly="readonly">None.</textarea>
+<script src="processing.js"></script>
+<script src="processing-helper.js"></script>
+</body>
+</html>
